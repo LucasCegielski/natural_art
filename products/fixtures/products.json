@@ -1,0 +1,114 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340155",
+        "name": "Four Trees",
+        "description": "Trees handpainted on white canvas. Acrylic, framed, 30cm x 60cm",
+        "price": 53.99,
+        "category": 2,
+        "rating": 4.6,
+        "image_url": "https://www.google.ie/url?sa=i&url=https%3A%2F%2Fwww.etsy.com%2Fie%2Fc%2Fhome-and-living%2Fhome-decor%2Fwall-decor&psig=AOvVaw3hWZH3pz3rzOWD6L8YWms-&ust=1634752190813000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPiW4s-E1_MCFQAAAAAdAAAAABAY",
+        "image": "four_trees.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Tree of Life",
+        "description": "Handcarved tree wall decor. Oak, 120cm x 120cm. Comes with handing fixtures.",
+        "price": 258.99,
+        "category": 7,
+        "rating": 4.6,
+        "image_url": "https://www.google.ie/url?sa=i&url=https%3A%2F%2Ffoter.com%2Fmetal-wall-art-circles&psig=AOvVaw3hWZH3pz3rzOWD6L8YWms-&ust=1634752190813000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPiW4s-E1_MCFQAAAAAdAAAAABAe",
+        "image": "large_tree.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Cicle of Life",
+        "description": "Handmade resin ring. Size 7.",
+        "price": 9.99,
+        "category": 1,
+        "rating": 4.6,
+        "image_url": "https://cdn.shopify.com/s/files/1/1410/9948/products/product-image-663432352_grande.jpg?v=1571439342",
+        "image": "ring.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Colorful Beads",
+        "description": "Handmade resin beads bracelet with metal charm and metal clip. Size 9.",
+        "price": 19.99,
+        "category": 6,
+        "rating": 4.6,
+        "image_url": "https://galantajewellery.com/wp-content/uploads/2020/06/IMG_20200528_112513_2-scaled.jpg",
+        "image": "bracelet.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Luxury Bundle",
+        "description": "Gorgous handmade luxury set of neckles, pair of earings and a ring. Ruby set in silver. Ring size 7. Neckles with 45cm long silver chain.",
+        "price": 100.99,
+        "category": 4,
+        "rating": 4.6,
+        "image_url": "https://m.media-amazon.com/images/I/71PH0AIPDhL._AC_UL1100_.jpg",
+        "image": "bundle2.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Rockies",
+        "description": "Beautifully handmade neckles. Resin and wooden beads on a 40 cm long string with metal clasp.",
+        "price": 15.99,
+        "category": 9,
+        "rating": 4.6,
+        "image_url": "https://i.pinimg.com/564x/65/ec/e0/65ece019a0ce83f6948084b8e54e919a.jpg",
+        "image": "neckles.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Grandmas Neckles",
+        "description": "Handmade neckelss inspired by Jo Grandma! Was EUR 100!",
+        "price": 49.99,
+        "category": 3,
+        "rating": 4.6,
+        "image_url": "https://i.pinimg.com/originals/2b/bb/3d/2bbb3dc03aa7a1ff44cfe122aa36775d.jpg",
+        "image": "clearance.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Ocean Time",
+        "description": "Handmade, resin round wall clock. 70 cm in diameter.",
+        "price": 39.99,
+        "category": 8,
+        "rating": 4.6,
+        "image_url": "https://www.artmajeur.com/medias/hd/d/z/dzhoanna-starlet/artwork/13531577_20200804-162443.jpg?v=1596547546",
+        "image": "newarrivals.jpg"
+      }
+    }
+]
