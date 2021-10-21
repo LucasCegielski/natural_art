@@ -17,10 +17,10 @@
                 Jewelery
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="jewelery-link">
-                <a href="" class="dropdown-item">Rings &amp; Ringbands</a>
-                <a href="" class="dropdown-item">Bracelets</a>
-                <a href="" class="dropdown-item">Neckleces</a>
-                <a href="" class="dropdown-item">All Jewelery</a>
+                <a href="{% url 'products' %}?category=rings,ringbands" class="dropdown-item">Rings &amp; Ringbands</a>
+                <a href="{% url 'products' %}?category=bracelets" class="dropdown-item">Bracelets</a>
+                <a href="{% url 'products' %}?category=neckleces" class="dropdown-item">Neckleces</a>
+                <a href="{% url 'products' %}?category=rings,ringbands,bracelets,neckleces" class="dropdown-item">All Jewelery</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Wall-Art
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="wallart-link">
-                <a href="" class="dropdown-item">Framed</a>
-                <a href="" class="dropdown-item">Large format</a>
-                <a href="" class="dropdown-item">All Wall-Art</a>
+                <a href="{% url 'products' %}?category=framed" class="dropdown-item">Framed</a>
+                <a href="{% url 'products' %}?category=large_format" class="dropdown-item">Large format</a>
+                <a href="{% url 'products' %}?category=framed,large_format" class="dropdown-item">All Wall-Art</a>
             </div>
         </li>
 
@@ -40,10 +40,10 @@
                 Specials
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Bundles</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=bundles" class="dropdown-item">Bundles</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,bundles,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
