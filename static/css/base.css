@@ -95,6 +95,13 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+/* ------------------------------- login form */
+
+#login-section {
+    margin-top: 150px;
+    text-align: center;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
