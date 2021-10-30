@@ -95,10 +95,10 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* ------------------------------- login form */
+/* ------------------------------- login, logout and signup form */
 
-#login-section {
-    margin-top: 150px;
+.login-section {
+    margin-top: 200px;
     text-align: center;
 }
 
