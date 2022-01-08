@@ -1,0 +1,1 @@
+web: gunicorn natural_art.wsgi:application
