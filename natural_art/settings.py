@@ -8,6 +8,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+if os.path.exists('env.py'):
+    import env
 import dj_database_url
 
 
@@ -36,10 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'django.contrib.sites',
     'home',
     'products',
     'bag',
