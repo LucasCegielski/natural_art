@@ -1,8 +1,8 @@
 <h1 align="center">Milestone Project 4 - Flower Beauty</h1>
 
-[Click here to see live project](full link to live project on Heroku)
+[Click here to see live project](https://dp-natural-art.herokuapp.com/)
 
-This project is a fully operational eCommerce website for a client operating small business, selling handmade art. Jewelry, wall-art, cards, coasters, etc. contain real flowers pressed into resin. Each creation is unique a no to items are the same. Artists is hoping to expand beyond the existing business model and gain new clients using this website. Since the project started as Natural Art, artists operates her current business under Flower Beauty brand.
+This project is a fully operational eCommerce website for a client operating small business, selling handmade art. Jewelry, wall-art, cards, coasters, etc. contain real flowers pressed into resin. Each creation is unique a no two items are the same. Artists is hoping to expand beyond the existing business model and gain new clients using this website. Since the project started as Natural Art, artists operates her current business under Flower Beauty brand.
 
 # Table Of Contents
 
@@ -125,40 +125,27 @@ A brief overview of languages, frameworks, and tools applied in this project:
 3. [Google Fonts](https://fonts.google.com/)
     - Used to import the font.
 
-    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX!!!!!!!!!!!!!!!!!
-
-5. [GitHub](https://github.com/)
+4. [GitHub](https://github.com/)
     - Used as repository for this project.
 
-6. [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
-    - Used for testing and fixing website bugs. Also used Google Lighthouse for performance testing.
+5. [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+    - Used for testing and fixing website bugs.
 
-7. [Google Icons](https://google.github.io/material-design-icons/#icon-font-for-the-web)
-    - Used on the site to improve visual design.
-
-8. [JQuery](https://jquery.com/)
+6. [JQuery](https://jquery.com/)
     - DOM manipulation to initiate the interactive functions from Materialize.
 
-9. [Heroku](https://www.heroku.com/)
+7. [Heroku](https://www.heroku.com/)
     - Used for this project to be build, run, and operate entirely in the cloud.
 
-10. [Stripe](https://stripe.com/en-ie)
+8. [Stripe](https://stripe.com/en-ie)
     -  NoSQL database used for the project.
 
-11. [Postgre](https://www.postgresql.org/)
-    - PostgreSQL was the database used to store all the models in Heroku on the production environment.
-
-12. [Gitpod](https://www.gitpod.io/)
+9. [Gitpod](https://www.gitpod.io/)
     - Was the online IDE used to developed the entire project and to push changes and production to GitHub and Heroku.
 
-13. [Markdown](https://pt.wikipedia.org/wiki/Markdown)
+10. [Markdown](https://pt.wikipedia.org/wiki/Markdown)
     - Was used for this README and to create the table of contents and code blocks.
 
-14. [Fontawesome](https://fontawesome.com/)
-    - Was used on the entire website to provide a better UX/UI through the site.
-
-15. [SQLite](https://www.sqlite.org/)
-    - The Django SQlite database was used as the database in the development environment
 
 # Testing
 
@@ -166,11 +153,9 @@ A brief overview of languages, frameworks, and tools applied in this project:
 
 - Through the Console device toolbar it was also tested using multiple emulated devices, including Galaxy S5, iPhone 5/SE iPhone 6/7/8, iPhone X, iPad Pro, etc.
 
-- Used [Am I Responsive](http://ami.responsivedesign.is/#) for testing different viewports and a [Mockup Generator](http://techsini.com/multi-mockup/index.php) 
-
 - The W3C Markup Validator and W3C CSS Validator Services:
 
-    - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) - Validated all pages HTML by direct input.
+    - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) - Validated all pages HTML by direct input. No errors were found.
 
     - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - No errors were found.
 
@@ -184,7 +169,7 @@ A brief overview of languages, frameworks, and tools applied in this project:
 
 ## Database
 
-- Throughout the development of the project I was using  Using Django SQL database SQLite and in Heroku I have used a PostgreSQL database for deployment.
+- Throughout the development of the project and as per the course's Boutique Ado videos, I was using  Using Django SQL database SQLite and in Heroku I have used a PostgreSQL database for deployment.
 
 ### Product App
 
@@ -194,11 +179,12 @@ A brief overview of languages, frameworks, and tools applied in this project:
 | :-------------: |:----------------:| :--------------: | :---------: |
 |Product id | id | primary_key=True | AutoField
 |Category|category|null=True, blank=True, on_delete=models.SET_NULL|ForeignKey
-|Type|type|null=True, blank=True, on_delete=models.SET_NULL|ForeignKey
-|Manufacturer|manufacturer|null=True, blank=True, on_delete=models.SET_NULL|ForeignKey
-|Name | name | max_length=30 | CharField
+|SKU|sku|null=True, blank=True, max_length=254|CharField
+|Sizes|has_sizes|null=True, blank=True, dafault=FALSE|ForeignKey
+|Name | name | max_length=254 | CharField
 |Description | content | blank=False | TextField
-|Price | price | max_digits=20, decimal_places=2 | DecimalField
+|Price | price | max_digits=6, decimal_places=2 | DecimalField
+|Rating | rating | max_digits=6, null=True, decimal_places=2 | DecimalField
 |Image URL| image_url| max_length=1024, null=True, blank=True | URLField
 |Image | image | null=True, blank=True | ImageField
 
@@ -210,34 +196,15 @@ A brief overview of languages, frameworks, and tools applied in this project:
 |Name | name | max_length=50 | CharField
 |Friendly Name | friendly_name | max_length=50, null=False, blank=False | CharField
 
-`Manufacturer` model
-
-| Name | Database Key | Validation | Field Type|
-| :-------------: |:----------------:| :--------------: | :---------: |
-|Manufacturer id | id | primary_key=True | AutoField
-|Name | name | max_length=50, null=False, blank=False | CharField
-|Country | country | max_length=50, null=False, blank=False | CharField
-
-`Type` model
-
-| Name | Database Key | Validation | Field Type|
-| :-------------: |:----------------:| :--------------: | :---------: |
-|Type id | id | primary_key=True | AutoField
-|Name | name | max_length=50, null=False, blank=False | CharField
-|Friendly Name | friendly_name | max_length=254, null=False, blank=False | CharField
-|Thrust | thrust | max_length=30 | CharField
-
-
 ### Checkout App
 
 `Order` model
 
 | Name | Database Key | Validation | Field Type|
 | :-------------: |:----------------:| :--------------: | :---------: |
-|Order id | id | primary_key=True | AutoField
 |Order Number | order_number | max_length=32, null=False, editable=False | CharField
-|Full Name | full_name | max_length=50, null=False, blank=False | CharField
 |User Profile | user_profile | on_delete=models.SET_NULL, null=True, blank=True | ForeignKey
+|Full Name | full_name | max_length=50, null=False, blank=False | CharField
 |Email | email | max_length=254, null=False, blank=False | EmailField
 |Phone Number | phone_number | max_length=20, null=False, blank=False | CharField
 |Country | country | null=False, blank=False | CountryField
@@ -253,27 +220,28 @@ A brief overview of languages, frameworks, and tools applied in this project:
 |Original Cart | original_cart | null=False, blank=False, default='' | TextField
 |Stripe PID | stripe_pid | max_length=254, null=False, blank=False, default='' | CharField
 
+`OrderLineItem` model
+
 | Name | Database Key | Validation | Field Type|
 | :-------------: |:----------------:| :--------------: | :---------: |
-|Order id | id | primary_key=True | AutoField
-|Order | order | null=False, blank=False, on_delete=models.CASCADE | ForeignKey
+|Order | order | null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems' | ForeignKey
 |Product | product | null=False, blank=False, on_delete=models.CASCADE | ForeignKey
-|Quantity | quantity | null=False, blank=False | IntegerField
+|Product Size | product_size | max_lenght=2, null=False, blank=False | Charfield
+|Quantity | quantity | null=False, blank=False, default=0 | IntegerField
 |Line Item Total | lineitem_total | max_digits=6, decimal_places=2, null=False, blank=False, editable=False | DecimalField
 
 ### Profile App
 
 | Name | Database Key | Validation | Field Type|
 | :-------------: |:----------------:| :--------------: | :---------: |
-|Order id | id | primary_key=True | AutoField
 |Order | user | on_delete=models.CASCADE | OneToOneField
 |Order | default_phone_number | max_length=20, null=True, blank=True | CharField
-|Order | default_country | null=True, blank=True | CountryField
-|Order | default_postcode | max_length=20, null=True, blank=True | CharField
-|Order | default_town_or_city | max_length=40, null=True, blank=True | CharField
 |Order | default_street_address1 | max_length=80, null=True, blank=True | CharField
 |Order | default_street_address2 | max_length=80, null=True, blank=True | CharField
+|Order | default_town_or_city | max_length=40, null=True, blank=True | CharField
 |Order | default_county | max_length=80, null=True, blank=True | CharField
+|Order | default_postcode | max_length=20, null=True, blank=True | CharField
+|Order | default_country | null=True, blank=True | CountryField
 
 ## Testing User Stories
 
@@ -565,7 +533,7 @@ In development add an environment variable called DEVELOPMENT to use the develop
 
 ## Content
 
--  The  details and descriptions of the products were taken from [Wikipedia](https://www.wikipedia.org/) and from [Revell](https://www.revell.de/).
+-  The  details and descriptions of the products were taken from the artist Donata Panczyk, who created the products.
 
 ## Media
 
@@ -575,6 +543,8 @@ In development add an environment variable called DEVELOPMENT to use the develop
 
 - My mentor Akshat for all his help and ideas.
 
-- Thanks to the tutors at Code Institute for all help during the course (Especial thanks to Scott for all his help).
+- Thanks to the tutors at Code Institute for all help during the course (Especial thanks to Igor, James and Scott for all their help).
 
 - Slack channel help regarding ongoingissues and problem solving ideas.
+
+- Stackoverflow community and countless youtubers for all their input and influence.
