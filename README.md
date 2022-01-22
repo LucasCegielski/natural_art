@@ -246,35 +246,35 @@ A brief overview of languages, frameworks, and tools applied in this project:
 ## Testing User Stories
 
 -   ### First Time Visitor Goals
-    1. As a first time user, entering the site I know by the landing page and by vieweing the "All Products" section that the website sells Aircraft Models.
+    1. As a first time user, entering the site I know by the landing page and by vieweing the "All Products" section that the website sells handmade art and jewelry.
     2. As a first time user, I can navigate via the top navigation menu to view and filter the products and to also register my account.
     3. As a first time user, I can see the all the products in the website by going to the "All products" section via the top nav bar.
-    4. As a first time user, I can filter all the products by their categories or Aircraft types via the top navigation bar to check the products I am most interested in.
+    4. As a first time user, I can filter all the products by their categories or types via the top navigation bar to check the products I am most interested in.
     5. As a first time user, I can check my current cart by clicking on the Cart icon on the top menu and check the products I have added with the quantity and price.
     6. As a first time user, I can quickly and easily update my cart information by decreasing/increasing the products quantity and then clicking update or by removing a product I don't want it anymore.
 
 -   ### Returning Visitor Goals
-    1. As a returning user, I can check and sort the Aircraft Models by their price by using the Sort Field and selecting the Price sorting options.
+    1. As a returning user, I can check and sort the products by their price by using the Sort Field and selecting the Price sorting options.
     2. As a returning user, I can login back with my registered account from previous sessions.
     3. As a returning user, I can go through the checkout process with my previous information saved there.
     4. As a returning user, I can check my favorite Aircraft Models types by filtering the types I like the most via the top navigation menu.
 
 -   ### Frequent Visitor Goals
     1. As a frequent user, I can login back to my account with all my previous information from past purchases added there and also with the order history.
-    2. As a frequent user, I can quickly view all the products by going to "All Products" on the top navigation menu and seeing all the Aircraft Models current in the store.
+    2. As a frequent user, I can quickly view all the products by going to "All Products" on the top navigation menu and seeing all the products currently in the store.
     3. As a frequent user, I can see a banner message informing if I will have to pay the shipping price with the current cart and products I have added in the cart.
     4. As a frequent user, I can quickly add the products to my cart and return to the store using the "Back to the store" button to view and add any more products to the cart.
     5. As a frequent user, I can leave the website and when I return my session is saved and I can return to vieweing the website and the products without having to login back again and without having to re-add my products to the cart.
 
 ## Additional Testing
 
-    All testing performed via the app deployed to Heroku (on the-hangar.herokuapp.com)
+    All testing performed via the app deployed to Heroku (on https://dp-natural-art.herokuapp.com/)
 
 -   ### Testing index.html page:
 
-    1. When clicking "Click here to Access" I am succesfully redirected to the webstore page.
+    1. When clicking "Shop Now" I am succesfully redirected to the webstore page.
 
-    2. Tested that the hero image of the hangar is responsive to the screen size.
+    2. Tested that the hero image is responsive to the screen size.
 
 -   ### Testing the Products App:
 
@@ -307,13 +307,11 @@ A brief overview of languages, frameworks, and tools applied in this project:
 
     #### add_product.html page:
 
-    1. Made sure that while on the adding product management page users can choose the correct selectors for Caregoty, Type and Manufacturer from the database.
+    1. Made sure that while on the adding product management page users can choose the correct selectors for Category and Type from the database.
 
     2. Tested both buttons "Cancel" (returns to products page) and "Add product" (to add the product to the database)
 
     3. Tested adding a test product and made sure the image and all the fiels were created correctly on the database.
-
-    4. Tested the "noimage.jpg" to make sure if a product is added without an image the noimage.jpg appears.
 
     #### edit_product.html page:
 
@@ -325,7 +323,7 @@ A brief overview of languages, frameworks, and tools applied in this project:
 
 -   ### Testing the Cart App and also cart.html page :
 
-    1. Tested the Increase/Decrease button and then the "Update" button to make sure the product quantity is changing accordingly as well as the total price.
+    1. Tested the Increase/Decrease button and then the "Update" button to make sure the product quantity is changing accordingly as well as the total price. This functionality was reverted back to the state where user can now only select one item. That is due to the fact that all products are unique, therefore no user can purchase multiple items of the same product. Functionality however was left in the code, as the artists asked for it, claiming they will introduce series of products. Code would need to be changed then to allow this.
 
     2. While Increasing/Decreasing the product quantity and clicking "Update" the Success toast should appear to inform the product quantity was updated accordinly.
 
@@ -333,7 +331,7 @@ A brief overview of languages, frameworks, and tools applied in this project:
 
     4. Tested both the "Keep Shopping" and "Proceed to Checkout" buttons to make sure they are working.
 
-    5. While adding a product under €100 made sure that the yellow banner informing about the free delivery is appearing.
+    5. While adding a product under €50 made sure that the yellow banner informing about the free delivery is appearing.
 
     6. Made sure that all the information is showing correctly like product name, price, quantity, subtotal and grand total.
 
@@ -373,7 +371,7 @@ A brief overview of languages, frameworks, and tools applied in this project:
 
     2. On the toast_success.html made sure the button "View your Cart" shows correctly and redirects to the cart page.
 
-    3. While selecting a product under €100 made sure the yellow bar advising about the free shipping fee appears.
+    3. While selecting a product under €50 made sure the yellow bar advising about the free shipping fee appears.
 
 -   ### Testing main navigation and collapsible bar:
 
@@ -391,27 +389,12 @@ A brief overview of languages, frameworks, and tools applied in this project:
 
 ## Bugs and Fixes
 
-1. After adding the search functionality every time I was searching for anything it was displaying all the products.
-	- 1.1 **Fix:** The indendation of both lines (lines followed below) was wrong. I have to remove one indendation level: 
-    ```
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
-    ```
+1. After running flake8 command, I was presented a list of errors, of which most were either "line too long" or "xxx imported but not used". Large volume of those were removed, but I was advised by the Tutors and the author of the last few videos of the course (especially the part related to refactoring the code), to not fix the errors present in migration files. Those errors are still present in the project, but are all of rather cosmetic nature and I did not find them causing functional errors.
 
-2. After adding the search functionality for product types the server was running fine and not showing any error, but everytime I selecting the product type like "Jets" on the navbar it wasn't showing anything.
-    - 2.1 **Fix:** I have to add a Friendly name to models.py so while selecting the type on navbar would retrieve the type name all in lowercase and show the friendly name with the first letter capitalized.
-
-3. While trying to setup webhook I got a few 401 errors while trying to send a test event to a webhook endpoint. While investigating it better I have found out that this error was related to an Unauthorized request.
-    - 3.1 **Fix:** The 8000 port was set to private and while checking Slack I have found out that the 8000 port must be set to public. After changing the 8000 port to public I was still getting a 401 error and this time was due to the URL added in stripe not containing the 8000 port on the URL (https://8000-coffee-mongoose-wi4a85v2.ws-eu18.gitpod.io/checkout/wh/).
-
-4. After I deleted a product on Django Admin panel to perform a test the entire website started returning a 404 with the error message `RelatedObjectDoesNotExist at /admin/login/`
-    - 4.1 **Fix:** After trying several times to close and start the python server and also shutting off and opening again the workspace on gitpod I found that the issue was with the session cookies. After clearing all the cookies I manage to see the website again without the products that I have deleted.
-
-5. After deploying to Heroku I was trying to access the Postgres database to create Superuser but it was only accessing the SQLite database.
-    - 4.1 **Fix:** After checking with Tutor Support he informed I forgot to add the DATABASE_URL to gitpod vars.
-
-6. After deploying to Amazon S3 bucket the images were not showing.
-    - 4.1 **Fix:** After a very detailed check I have found that instead of using `/media/` the images in Amazon S3 bucket were set to /static/media/. After I updated the URL the images appeared again.
+2. There was an issue related to requirements.txt file in this project. The problem is that when opening the workspace, each time, it is necessary to re-install the requirements. To do this, each time I open workspace, I need to run the following commands:
+- pip3 uninstall -y -r <(pip3 freeze) and then,
+- pip3 install -r requirements.txt
+When that is done, all seems to be working in order, I can run server via port 8000, etc. As I was explained by the Tutors, the issue is created by the recent problems with Gitpod workspace.
 
 # Deployment
 
