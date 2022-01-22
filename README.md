@@ -391,7 +391,7 @@ A brief overview of languages, frameworks, and tools applied in this project:
 
 1. After running flake8 command, I was presented a list of errors, of which most were either "line too long" or "xxx imported but not used". Large volume of those were removed, but I was advised by the Tutors and the author of the last few videos of the course (especially the part related to refactoring the code), to not fix the errors present in migration files. Those errors are still present in the project, but are all of rather cosmetic nature and I did not find them causing functional errors.
 
-2. There was an issue related to requirements.txt file in this project. The problem is that when opening the workspace, each time, it is necessary to re-install the requirements. To do this, each time I open workspace, I need to run the following commands:
+2. There was an issue related to requirements.txt file in this project. The problem is that when opening the workspace, each time, it is necessary to re-install the dependencies. To do this, each time I open workspace, I need to run the following commands:
 - pip3 uninstall -y -r <(pip3 freeze) and then,
 - pip3 install -r requirements.txt
 When that is done, all seems to be working in order, I can run server via port 8000, etc. As I was explained by the Tutors, the issue is created by the recent problems with Gitpod workspace.
@@ -400,7 +400,7 @@ When that is done, all seems to be working in order, I can run server via port 8
 
 ## Heroku
 
-The project was deployed on [Heroku](the-hangar.herokuapp.com), the following steps were taken:
+The project was deployed on [Heroku](https://dp-natural-art.herokuapp.com/), the following steps were taken:
 
 1. Created a requirements.txt file by typing: `pip3 freeze --local > requirements.txt` in the terminal.
 2. Created a procfile.
