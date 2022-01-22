@@ -7,7 +7,7 @@ import json
 import os
 import requests
 import shutil
-import subprocess
+import subprocess # noqa
 import sys
 from os.path import exists
 
@@ -31,7 +31,7 @@ MIGRATE_FILE_LIST = [{"filename": ".theia/settings.json",
                      {"filename": ".theia/heroku_config.sh",
                       "url": ".vscode/heroku_config.sh"
                       },
-                      {"filename": ".theia/uptime.sh",
+                     {"filename": ".theia/uptime.sh",
                       "url": ".vscode/uptime.sh"
                       },
                      {"filename": ".theia/init_tasks.sh",
@@ -101,7 +101,7 @@ def build_post_upgrade():
     upgrades = json.loads(r.content.decode("utf-8"))
     content = ""
 
-    for k,v in upgrades.items():
+    for k, v in upgrades.items():
         if float(k) > THIS_VERSION:
             print(f"Adding version changes for {k} to post_upgrade.sh")
             content += v
@@ -111,7 +111,8 @@ def build_post_upgrade():
         with open(".vscode/post_upgrade.sh", "w") as f:
             f.writelines(content)
 
-    print("Built post_upgrade.sh. Restart your workspace for it to take effect")
+    print(
+        "Built post_upgrade.sh. Restart your workspace for it to take effect")
 
 
 def process(file, suffix):
@@ -178,7 +179,8 @@ if __name__ == "__main__":
 
     print("CI Template Migration Utility 0.2")
     print("---------------------------------")
-    print("The default action is to upgrade the workspace to the latest version.")
+    print(
+        "The default action is to upgrade the workspace to the latest version.")
     print(f"Usage: python3 {sys.argv[0]} [--nobackup --migrate]")
 
     if not BACKUP:
