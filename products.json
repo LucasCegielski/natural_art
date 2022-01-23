@@ -1,0 +1,246 @@
+[{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "rings",
+        "friendly_name": "Rings"
+    }
+}, {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "framed",
+        "friendly_name": "Framed Art"
+    }
+}, {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "clearance",
+        "friendly_name": "Clearance"
+    }
+}, {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "bundles",
+        "friendly_name": "Bundles"
+    }
+}, {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "ringbands",
+        "friendly_name": "Ringbands"
+    }
+}, {
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "bracelets",
+        "friendly_name": "Bracelets"
+    }
+}, {
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "large_format",
+        "friendly_name": "Large Format"
+    }
+}, {
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+    }
+}, {
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+        "name": "neckleces",
+        "friendly_name": "Neckleces"
+    }
+}, {
+    "model": "products.category",
+    "pk": 10,
+    "fields": {
+        "name": "earings",
+        "friendly_name": "Earings"
+    }
+}, {
+    "model": "products.category",
+    "pk": 11,
+    "fields": {
+        "name": "broches",
+        "friendly_name": "Broches"
+    }
+}, {
+    "model": "products.category",
+    "pk": 12,
+    "fields": {
+        "name": "stationery",
+        "friendly_name": "Stationery"
+    }
+}, {
+    "model": "products.category",
+    "pk": 13,
+    "fields": {
+        "name": "resin",
+        "friendly_name": "Resin"
+    }
+}, {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "category": 2,
+        "sku": "pp5001340155",
+        "name": "Four Trees",
+        "description": "Trees handpainted on white canvas. Acrylic, framed, 30cm x 60cm",
+        "has_sizes": false,
+        "price": "55.99",
+        "rating": "4.60",
+        "image_url": "https://www.google.ie/url?sa=i&url=https%3A%2F%2Fwww.etsy.com%2Fie%2Fc%2Fhome-and-living%2Fhome-decor%2Fwall-decor&psig=AOvVaw3hWZH3pz3rzOWD6L8YWms-&ust=1634752190813000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPiW4s-E1_MCFQAAAAAdAAAAABAY",
+        "image": "four_trees.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "category": 8,
+        "sku": "pp5001600425",
+        "name": "Ocean Time",
+        "description": "Handmade, resin round wall clock. 70 cm in diameter.",
+        "has_sizes": false,
+        "price": "39.99",
+        "rating": "4.60",
+        "image_url": "https://www.artmajeur.com/medias/hd/d/z/dzhoanna-starlet/artwork/13531577_20200804-162443.jpg?v=1596547546",
+        "image": "newarrivals.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "category": 7,
+        "sku": "pp5001600425",
+        "name": "Tree of Life",
+        "description": "Handcarved tree wall decor. Oak, 120cm x 120cm. Comes with handing fixtures.",
+        "has_sizes": false,
+        "price": "258.99",
+        "rating": "4.60",
+        "image_url": "https://www.google.ie/url?sa=i&url=https%3A%2F%2Ffoter.com%2Fmetal-wall-art-circles&psig=AOvVaw3hWZH3pz3rzOWD6L8YWms-&ust=1634752190813000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPiW4s-E1_MCFQAAAAAdAAAAABAe",
+        "image": "large_tree_a9U79Nm.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "category": 1,
+        "sku": "pp5001600425",
+        "name": "Cicle of Life",
+        "description": "Handmade resin ring. Size 7.",
+        "has_sizes": false,
+        "price": "9.99",
+        "rating": "4.60",
+        "image_url": "https://cdn.shopify.com/s/files/1/1410/9948/products/product-image-663432352_grande.jpg?v=1571439342",
+        "image": "ring_S7Mw22v.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "category": 6,
+        "sku": "pp5001600425",
+        "name": "Colorful Beads",
+        "description": "Handmade resin beads bracelet with metal charm and metal clip. Size 9.",
+        "has_sizes": false,
+        "price": "19.99",
+        "rating": "4.60",
+        "image_url": "https://galantajewellery.com/wp-content/uploads/2020/06/IMG_20200528_112513_2-scaled.jpg",
+        "image": "bracelet_mbVfQek.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "category": 4,
+        "sku": "pp5001600425",
+        "name": "Luxury Bundle",
+        "description": "Gorgous handmade luxury set of neckles, pair of earings and a ring. Ruby set in silver. Ring size 7. Neckles with 45cm long silver chain.",
+        "has_sizes": false,
+        "price": "100.99",
+        "rating": "4.60",
+        "image_url": "https://m.media-amazon.com/images/I/71PH0AIPDhL._AC_UL1100_.jpg",
+        "image": "bundle2_zOfMcpU.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "category": 9,
+        "sku": "pp5001600425",
+        "name": "Rockies",
+        "description": "Beautifully handmade neckles. Resin and wooden beads on a 40 cm long string with metal clasp.",
+        "has_sizes": false,
+        "price": "15.99",
+        "rating": "4.60",
+        "image_url": "https://i.pinimg.com/564x/65/ec/e0/65ece019a0ce83f6948084b8e54e919a.jpg",
+        "image": "neckles_E02TVm5.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "category": 3,
+        "sku": "pp5001600425",
+        "name": "Grandmas Neckles",
+        "description": "Handmade neckelss inspired by Jo Grandma! Was EUR 100!",
+        "has_sizes": false,
+        "price": "49.99",
+        "rating": "4.60",
+        "image_url": "https://i.pinimg.com/originals/2b/bb/3d/2bbb3dc03aa7a1ff44cfe122aa36775d.jpg",
+        "image": "clearance_Au6OKdE.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "category": 9,
+        "sku": "1",
+        "name": "Real pressed Irish Forget Me Not flower set in resin necklace",
+        "description": "It is stainless steel and not tarnishing. Chain length - 38cm. Bezel size - 20mmX20mm. Base colour - white. Flower colour - blue. Flowers are picked up from beautiful Irish nature. It is a keepsake of nature close to you. Handmade in Limerick, Ireland.",
+        "has_sizes": false,
+        "price": "26.00",
+        "rating": "4.90",
+        "image_url": null,
+        "image": "Necklace1.JPG"
+    }
+}, {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "category": 9,
+        "sku": "2",
+        "name": "Real pressed Irish Buttercup flower set in resin necklace",
+        "description": "It is stainless steel and not tarnishing. Chain length - 40cm. Bezel size - 25mmX25mm. Base colour - black. Flower colour - yellow.  Flowers are picked up from beautiful Irish nature. It is a keepsake of nature close to you. Handmade in Limerick, Ireland.",
+        "has_sizes": false,
+        "price": "26.00",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "Necklace2.JPG"
+    }
+}, {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "category": 1,
+        "sku": "5",
+        "name": "test",
+        "description": "testing",
+        "has_sizes": false,
+        "price": "99.00",
+        "rating": "1.00",
+        "image_url": null,
+        "image": ""
+    }
+}]

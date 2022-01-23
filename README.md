@@ -492,7 +492,7 @@ In development add an environment variable called DEVELOPMENT to use the develop
 
 ## Running locally
 
-1. Go tho this [project repository](https://github.com/MatSim91/Milestone-Project-4-The-Hangar) in GitHub while signed in in your own GitHub account.
+1. Go tho this [project repository](https://github.com/LucasCegielski/natural_art) in GitHub while signed in in your own GitHub account.
 2. Click on the dropdown menu Code option.
 3. Click on "Open with GitHub Desktop" to clone and open the repository locally.
 4. Click on the "Choose" option and navigate to the local path where you want the cloned repository to be.
@@ -510,9 +510,7 @@ In development add an environment variable called DEVELOPMENT to use the develop
 
 - [Google Fonts:](https://fonts.google.com/) Thanks to Google for providing this huge amount of free fonts on the site.
 
-- [Bootstrap](https://getbootstrap.com) for the large and free libraries 
-
-- [Pixabay](https://pixabay.com/images/search/hangar/) - Thanks to Pixabay for providing the awesome hero image of The Hangar
+- [Bootstrap](https://getbootstrap.com) for the large and free libraries.
 
 ## Content
 
@@ -520,13 +518,13 @@ In development add an environment variable called DEVELOPMENT to use the develop
 
 ## Media
 
--  The media for the Aircraft Products was taken from a website that sell Aircraft Models: [Revell](https://www.revell.de/).
+-  Pictures of the products in the store are photos taken by the artist herself and are of the products she created.
 
 ## Acknowledgements
 
 - My mentor Akshat for all his help and ideas.
 
-- Thanks to the tutors at Code Institute for all help during the course (Especial thanks to Igor, James and Scott for all their help).
+- Thanks to the tutors at Code Institute for all help during the course (especialy to Igor, James and Sean, for all their help and amazing input).
 
 - Slack channel help regarding ongoingissues and problem solving ideas.
 
