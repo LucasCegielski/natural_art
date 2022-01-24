@@ -396,6 +396,8 @@ A brief overview of languages, frameworks, and tools applied in this project:
 - pip3 install -r requirements.txt
 When that is done, all seems to be working in order, I can run server via port 8000, etc. As I was explained by the Tutors, the issue is created by the recent problems with Gitpod workspace.
 
+3. Had a problem with hero image showing up n the wensite when deployed from heroku. It turned out that image was changed and not manually added to AWS bucket. I added the image and applied the read permissions for public view.
+
 # Deployment
 
 ## Heroku
